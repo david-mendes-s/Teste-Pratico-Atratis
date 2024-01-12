@@ -1,0 +1,1 @@
+"use strict";var number=210;console.log("modal");
