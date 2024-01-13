@@ -1,1 +1,1 @@
-"use strict";var number=210;console.log("modal");
+"use strict";AOS.init({duration:1e3,easing:"ease-in-out",delay:100,once:!0});

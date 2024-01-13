@@ -1,3 +1,345 @@
-body {
-    background: green;
+
+.hero {
+    background: url('../assets/banner.svg') center center;
+    height: 615px;
+    padding-top: 220px;
+
+    .text {
+        max-width: 410px;
+        
+        h1, p {
+            color: $white;
+        }
+
+        p {
+            margin: 5px 0 16px;
+        }
+    }
+}
+
+.about {
+    background-color: $gray-light;
+
+    .container {
+        .row {
+            padding: 70px 0;
+            align-items: center;
+            
+            img {
+                width: 576px;
+                height: auto;
+                
+            }
+
+            .text {
+                max-width: 620px;
+
+                h2 {
+                    color: $green;
+                }
+
+
+            }
+        }
+    }
+}
+
+.services {
+
+    .container{
+        .row {    
+            .text {
+                &:first-child {
+                    padding: 80px 0 35px;
+                }
+            }   
+            h4 {  
+                color: $green;
+            }
+        }
+    }
+}
+
+.plans {
+    .container {
+        .row {
+
+            &:first-child {
+                padding-top: 60px;
+            }
+
+            .plans-top {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                margin-top: 28px;
+                
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: $green;
+                }
+
+                .arrows {
+                    button {
+                        background: transparent;
+
+                        img {
+                            width: 38px;
+                            height: 38px;
+                        }
+                    }
+                }
+            }
+
+            .plans-botton {
+
+                margin-top: 28px;
+
+                .logos-plans {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    gap: 25px;
+
+                    .logo {
+                        border-radius: 10px; 
+                        border: 1px #E0E0E0 solid;
+
+                        padding: 60px 68px;
+                        
+                    }
+                }
+            }
+
+            .plans-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 32px 0 50px;
+            }
+
+        }
+    }
+}
+
+.differential {
+    background: url('../assets/diferencial-atratis.jpg');
+
+    .container {
+        .row {
+            padding: 75px 0;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                color: $white;
+            }
+
+            .card-differential-large {
+                max-width: 280px;
+                .text {
+                    h4 {
+                        color: $white;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            .card-differential-small {
+                max-width: 230px;
+                .description-icons {
+                    img {
+                        margin-bottom: 2px;
+                    }
+                    p {
+                        font-weight: 700;
+                    }
+                }
+            } 
+        }
+    } 
+}
+
+.testimony {
+    .container {
+        .row {
+            &:first-child {
+                padding-top: 88px;
+                margin-bottom: 75px;
+
+                .text {
+                    max-width: 500px;
+
+                    h4 {
+                        color: $green;
+                    }
+                }
+            }
+
+            &:last-child {
+                padding-bottom: 108px;
+            }
+        }
+    }
+}
+
+.blog {
+    background: $gray-light;
+    .container {
+        .row {
+
+            &:first-child {
+                padding-top: 80px;
+            }
+
+            &:last-child {
+                padding-bottom: 105px;
+            }
+
+            .text {
+                h4 {
+                    color: $green;
+                    margin-bottom: 34px;
+                }
+            }
+
+            .button-align {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    margin-top: 9px;
+                }
+            }
+
+        }
+    }
+}
+
+.contact {
+    .container {
+        .row {
+            
+            .text {
+                padding-top: 124px;
+                max-width: 330px;
+
+                .icons-contact {
+                    display: flex;
+                    flex-direction: column;
+                    
+                   
+                    .item-icons-contact {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+
+                        gap: 10px;
+
+                        max-width: 220px;
+
+                       
+                    }
+                }
+                
+                h3 {
+                    color: $green;
+                    font-weight: 600;
+                    margin-bottom: 7px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    color: $gray-dark;
+                }
+            }
+
+            .form-contact {
+                background: $green;
+
+                margin-top: 93px;
+                border-radius: 10px;
+                padding: 35px 52px;
+                margin-bottom: 58px;
+
+                
+
+                h4 {
+                    color: $white;
+                    margin-bottom: 11px;
+                }
+
+                .input-form {
+                    display: flex;
+                    flex-direction: column;
+
+                    margin-bottom: 21px;
+
+                    label {
+                        color: $white;
+                        
+                    }
+
+                    input {
+                        height: 42px;
+                        border-radius: 8px;
+
+                        padding: 16px;
+                        font-size: 14px;
+                    }
+
+                    textarea {
+                        height: 80px;
+                        border-radius: 8px;
+                    }
+                }
+
+                .term-policy {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .input-checkbox {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        p {
+                            color: $white;
+                            margin-bottom: 0;
+                            margin-right: 25px;
+                            margin-left: 8px;
+                        }
+
+                        input[type="checkbox"] {
+                            appearance: inherit;
+                            width: 17px;
+                            height: 17px;
+                            border: 1px solid $white;
+                            background-color: $green;
+                            border-radius: 2.5px;
+                        }
+
+                        
+
+                    }
+
+                    button {
+                        background: $white;
+                        border-radius: 6px;
+                        color: $green;
+                        padding: 9px 30px;
+
+                    }
+                }
+                
+            }
+        }
+    }
 }

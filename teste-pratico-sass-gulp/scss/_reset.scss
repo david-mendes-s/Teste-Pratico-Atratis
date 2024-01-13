@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: #f4f4f4;
+    border: 5px solid #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #288f45;
+    border-radius: 50px;
+}
