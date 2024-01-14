@@ -3,16 +3,18 @@ header {
         padding-top: 29px;
         
         .container {
-            
-
-           .align-nav {
+           
+            .align-nav {
                 width: 100%;
                 justify-content: flex-end;
                 align-items: center;
+                position: relative;
 
                 a {
                     color: $white;
                     font-size: 14px;
+
+                    
     
                     #logo-header {
                         width: 182px;
@@ -26,6 +28,25 @@ header {
                     justify-content: center;
                     gap: 10px;
                     li {
+                        position: relative;
+                        a {
+                            
+                            &::after {
+                                content: "";
+                                width: 0%;
+                                height: 3px;
+                                position: absolute;
+                                background: linear-gradient(266deg, $orange 0%, $yellow 100%); ;
+                                border-radius: 4px;
+                                bottom: 0;
+                                left: 0;
+                                transition: 0.5s ease-in-out;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+                        }
                         button {
                             margin-left: 10px;
                         }
@@ -34,7 +55,24 @@ header {
            }
         } 
     }
-}
+
+    
+        @media screen and (max-width: 990px) {
+
+            .navbar {
+                .container {
+                    .nav-backgraund-responsive {
+                        margin-top: 10px;
+                        background: $green;
+                        padding: 20px 0;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+
 
 
 /* .menu {
